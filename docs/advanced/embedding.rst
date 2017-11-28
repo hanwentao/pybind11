@@ -188,6 +188,7 @@ naturally:
 
     #include <pybind11/embed.h>
     namespace py = pybind11;
+    using namespace py::literals;
 
     PYBIND11_EMBEDDED_MODULE(cpp_module, m) {
         m.attr("a") = 1;
